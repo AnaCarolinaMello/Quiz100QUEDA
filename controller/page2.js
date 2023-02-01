@@ -13,7 +13,7 @@ function checkDefault(){
 
 function handleClick(){
     if (checkDefault()){
-        window.location.assign("/Users/Carol/OneDrive/Área%20de%20Trabalho/Ana%20Carolina/DevFrame/Nova%20pasta/view/quiz3Page.html");
+        window.location.assign("https://flashsolutions.online/100queda/quiz/view/page3");
     }else{
         errorMessage = document.querySelector('#errorMessage')
         if(!errorMessage){
