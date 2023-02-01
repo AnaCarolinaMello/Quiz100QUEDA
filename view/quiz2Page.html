@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
+    <link rel="stylesheet" href="../style/quiz2Page.css">
+    <title>Quiz 100QUEDA</title>
+</head>
+<body>
+    <header>
+        <img id='logo' src="../img/logo.png">
+        <div id="margem">
+            <div id="porcentagem"></div>
+        </div>
+    </header>
+    <main>
+        <div id="questionArea">
+            <div id="divText">
+                <label id="question">Que resultados você espera do seu tramento?</label>
+                <a href="">Clique aqui para pular o quiz</a>
+                <label id="subtext">Escolha quantos quiser</label>
+            </div>
+            <div id="divOptions">
+                <div id="hairLoss" class="choices">
+                    <label class="typeResult">Quero previnir a queda de cabelo</label>
+                    <div class='checkbox' id="hairLossCheck"></div>
+                </div>
+                <div class="choices" id="regrowHair">
+                    <label class="typeResult">Quero que meu cabelo cresca de novo</label>
+                    <div class='checkbox' id="regrowHairCheck"></div>
+                </div>
+                <div class="choices" id="thickerHair">
+                    <label class="typeResult">Quero engrossar meu cabelo</label>
+                    <div class='checkbox' id="thickerHairCheck"></div>
+                </div>
+            </div>
+        </div>
+        <div id="divButton">
+            <button id="continuarButton">Continuar</button>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="../controller/quiz2Page.js"></script>
+</body>
+</html>
