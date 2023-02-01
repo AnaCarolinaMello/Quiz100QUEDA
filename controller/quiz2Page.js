@@ -25,42 +25,66 @@ function handleClick(){
 document.querySelector('#hairLoss').addEventListener('click', ()=>{
     errorMessage = document.querySelector('#errorMessage')
     checkBackground = document.querySelector('#hairLossCheck').style.background
-    if(checkBackground == 'transparent' || !checkBackground){
+    if(checkBackground.includes('0px no-repeat') || !checkBackground){
         hairLoss = true
         if (!errorMessage){
-            document.querySelector('#hairLossCheck').style = `background: url(https://www.keeps.com/assets/next/icons/check-black.svg);`
+            document.querySelector('#hairLossCheck').style = `background: url(https://www.keeps.com/assets/next/icons/check-black.svg) center center / 20.1px no-repeat;`
+            document.querySelector('#checkboxHairLoss').style = `border: 2px solid`
+            document.querySelector('#hairLoss').style = `border: 2px solid`
+            document.querySelector('#typeResultHairLoss').style = `font-weight: bold`
         }else{
             errorMessage.remove()
-            document.querySelector('#hairLossCheck').style = `background: url(https://www.keeps.com/assets/next/icons/check-black.svg);`
+            document.querySelector('#hairLossCheck').style = `background: url(https://www.keeps.com/assets/next/icons/check-black.svg) center center / 20.1px no-repeat;`
+            document.querySelector('#checkboxHairLoss').style = `border: 2px solid`
+            document.querySelector('#hairLoss').style = `border: 2px solid`
+            document.querySelector('#typeResultHairLoss').style = `font-weight: bold`
         }
     }else{
         hairLoss = false
         if (!errorMessage){
-            document.querySelector('#hairLossCheck').style = `background: transparent;`
+            document.querySelector('#hairLossCheck').style = `background: url(https://www.keeps.com/assets/next/icons/check-black.svg) center center / 0px no-repeat;`
+            document.querySelector('#checkboxHairLoss').style = `border: 1px solid`
+            document.querySelector('#hairLoss').style = `border: 1px solid`
+            document.querySelector('#typeResultHairLoss').style = `font-weight: normal`
         }else{
             errorMessage.remove()
-            document.querySelector('#hairLossCheck').style = `background: transparent;`
+            document.querySelector('#hairLossCheck').style = `background: url(https://www.keeps.com/assets/next/icons/check-black.svg) center center / 0px no-repeat;`
+            document.querySelector('#checkboxHairLoss').style = `border: 1px solid`
+            document.querySelector('#hairLoss').style = `border: 1px solid`
+            document.querySelector('#typeResultHairLoss').style = `font-weight: normal`
         }
     }
 })
 document.querySelector('#regrowHair').addEventListener('click',()=>{
     errorMessage = document.querySelector('#errorMessage')
     checkBackground = document.querySelector('#regrowHairCheck').style.background
-    if(checkBackground == 'transparent' || !checkBackground){
+    if(checkBackground.includes('0px no-repeat') || !checkBackground){
         regrowHair = true
         if (!errorMessage){
-            document.querySelector('#regrowHairCheck').style = `background: url(https://www.keeps.com/assets/next/icons/check-black.svg);`
+            document.querySelector('#regrowHairCheck').style = `background: url(https://www.keeps.com/assets/next/icons/check-black.svg) center center / 20.1px no-repeat;`
+            document.querySelector('#checkboxRegrowHair').style = `border: 2px solid`
+            document.querySelector('#regrowHair').style = `border: 2px solid`
+            document.querySelector('#typeResultRegrowHair').style = `font-weight: bold`
         }else{
             errorMessage.remove()
-            document.querySelector('#regrowHairCheck').style = `background: url(https://www.keeps.com/assets/next/icons/check-black.svg);`
+            document.querySelector('#regrowHairCheck').style = `background: url(https://www.keeps.com/assets/next/icons/check-black.svg) center center / 20.1px no-repeat;`
+            document.querySelector('#checkboxRegrowHair').style = `border: 2px solid`
+            document.querySelector('#regrowHair').style = `border: 2px solid`
+            document.querySelector('#typeResultRegrowHair').style = `font-weight: bold`
         }
     }else{
         regrowHair = false
         if (!errorMessage){
-            document.querySelector('#regrowHairCheck').style = `background: transparent;`
+            document.querySelector('#regrowHairCheck').style = `background: url(https://www.keeps.com/assets/next/icons/check-black.svg) center center / 0px no-repeat;`
+            document.querySelector('#checkboxRegrowHair').style = `border: 1px solid`
+            document.querySelector('#regrowHair').style = `border: 1px solid`
+            document.querySelector('#typeResultRegrowHair').style = `font-weight: normal`
         }else{
             errorMessage.remove()
-            document.querySelector('#regrowHairCheck').style = `background: transparent;`
+            document.querySelector('#regrowHairCheck').style = `background: url(https://www.keeps.com/assets/next/icons/check-black.svg) center center / 0px no-repeat;`
+            document.querySelector('#checkboxRegrowHair').style = `border: 1px solid`
+            document.querySelector('#regrowHair').style = `border: 1px solid`
+            document.querySelector('#typeResultRegrowHair').style = `font-weight: normal`
         }
     }
 })
@@ -68,21 +92,34 @@ document.querySelector('#regrowHair').addEventListener('click',()=>{
 document.querySelector('#thickerHair').addEventListener('click',()=>{
     errorMessage = document.querySelector('#errorMessage')
     checkBackground = document.querySelector('#thickerHairCheck').style.background
-    if(checkBackground == 'transparent' || !checkBackground){
+    console.log(checkBackground)
+    if(checkBackground.includes('0px no-repeat') || !checkBackground){
         thickerHair = true
         if (!errorMessage){
-            document.querySelector('#thickerHairCheck').style = `background: url(https://www.keeps.com/assets/next/icons/check-black.svg);`
+            document.querySelector('#thickerHairCheck').style = `background: url(https://www.keeps.com/assets/next/icons/check-black.svg) center center / 20.1px no-repeat`
+            document.querySelector('#checkboxThickerHair').style = `border: 2px solid`
+            document.querySelector('#thickerHair').style = `border: 2px solid`
+            document.querySelector('#typeResultThickerHair').style = `font-weight: bold`
         }else{
             errorMessage.remove()
-            document.querySelector('#thickerHairCheck').style = `background: url(https://www.keeps.com/assets/next/icons/check-black.svg);`
+            document.querySelector('#thickerHairCheck').style = `background: url(https://www.keeps.com/assets/next/icons/check-black.svg) center center / 20.1px no-repeat;`
+            document.querySelector('#checkboxThickerHair').style = `border: 2px solid`
+            document.querySelector('#thickerHair').style = `border: 2px solid`
+            document.querySelector('#typeResultThickerHair').style = `font-weight: bold`
         }
     }else{
         thickerHair = false
         if (!errorMessage){
-            document.querySelector('#thickerHairCheck').style = `background: transparent;`
+            document.querySelector('#thickerHairCheck').style = `background: url(https://www.keeps.com/assets/next/icons/check-black.svg) center center / 0px no-repeat;`
+            document.querySelector('#checkboxThickerHair').style = `border: 1px solid`
+            document.querySelector('#thickerHair').style = `border: 1px solid`
+            document.querySelector('#typeResultThickerHair').style = `font-weight: normal`
         }else{
             errorMessage.remove()
-            document.querySelector('#thickerHairCheck').style = `background: transparent;`
+            document.querySelector('#thickerHairCheck').style = `background: url(https://www.keeps.com/assets/next/icons/check-black.svg) center center / 0px no-repeat;`
+            document.querySelector('#checkboxThickerHair').style = `border: 1px solid`
+            document.querySelector('#thickerHair').style = `border: 1px solid`
+            document.querySelector('#typeResultThickerHair').style = `font-weight: normal`
         }
     }
 })
